@@ -45,7 +45,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-doc = ['sphinx >= 2.0.0', 'sphinx-rtd-theme >= 1.0.0']
+docs = ['sphinx >= 7.0.0', 'sphinx-rtd-theme >= 1.0.0', 'myst-parser >= 1.0.0']
 
 
 [project.urls]
@@ -53,7 +53,7 @@ Homepage = "https://github.com/gnzhoutian/mini_toolbox"
 Issues = "https://github.com/gnzhoutian/mini_toolbox/issues"
 Repository = "https://github.com/gnzhoutian/mini_toolbox.git"
 Changelog = "https://github.com/gnzhoutian/mini_toolbox/blob/master/CHANGELOG.md"
-Documentation = "https://readthedocs.org"
+Documentation = "https://mini-tools.readthedocs.io/zh/stable"
 
 [project.scripts]
 piplist = "mini_toolbox.pip_list:main"

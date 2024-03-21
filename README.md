@@ -1,4 +1,5 @@
 # 说明
+[![Documentation Status](https://readthedocs.org/projects/mini-tools/badge/?version=latest)](https://mini-tools.readthedocs.io/zh/latest/?badge=latest)
 
 
 ## Example Package
