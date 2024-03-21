@@ -10,7 +10,7 @@
     },
     "files.exclude": {
         "**/LICENSE": true,
-        "**/.gitignore": true,
+        // "**/.gitignore": true,
         "dist": true,
     },
 }
