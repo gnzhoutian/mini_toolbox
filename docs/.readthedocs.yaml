@@ -8,7 +8,7 @@ build:
     python: "3.6"
   jobs:
     pre_build:
-      - echo "Command run at 'pre_build' step"
+      - cp -af README.md docs/source/
       - sphinx-apidoc -Mf -o docs/source mini_toolbox/
 
 python:
