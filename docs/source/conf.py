@@ -31,9 +31,6 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = [
     'modules.rst',
-    # 'nav.html',
-    # 'jjscm_tools.alpha.rst',
-    # 'jjscm_tools.useless.rst',
 ]
 
 language = 'zh_CN'
@@ -46,6 +43,6 @@ todo_include_todos = True
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
-html_logo = './_static/logo1.png'
+html_logo = './_static/logo2.png'
 html_favicon = './_static/favicon.png'
 html_title = 'Python迷你工具箱'
