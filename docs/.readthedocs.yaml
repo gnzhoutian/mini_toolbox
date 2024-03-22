@@ -6,7 +6,7 @@ build:
     python: "3.6"
   jobs:
     pre_build:
-      - cp -af README.md docs/source/
+      - cp -af README.md CHANGELOG.md docs/source/
       - sphinx-apidoc -Mf -o docs/source mini_toolbox/
 
 python:

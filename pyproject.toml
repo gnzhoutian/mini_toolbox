@@ -52,8 +52,8 @@ docs = ['sphinx >= 7.0.0', 'sphinx-rtd-theme >= 1.0.0', 'myst-parser >= 1.0.0']
 Homepage = "https://github.com/gnzhoutian/mini_toolbox"
 Issues = "https://github.com/gnzhoutian/mini_toolbox/issues"
 Repository = "https://github.com/gnzhoutian/mini_toolbox.git"
-Changelog = "https://github.com/gnzhoutian/mini_toolbox/blob/master/CHANGELOG.md"
-Documentation = "https://mini-tools.readthedocs.io/zh/stable"
+Changelog = "https://github.com/gnzhoutian/mini_toolbox/blob/haha/CHANGELOG.md"
+Documentation = "https://mini-toolbox.readthedocs.io/latest/"
 
 [project.scripts]
 piplist = "mini_toolbox.pip_list:main"

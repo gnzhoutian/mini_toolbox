@@ -160,6 +160,7 @@ cython_debug/
 #.idea/
 
 
-# docs
-docs/source/mini_toolbox.rst
+# Private
+docs/source/mini_toolbox.*
 docs/source/modules.rst
+docs/source/README.md
