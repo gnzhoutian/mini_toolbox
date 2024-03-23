@@ -1,30 +1,31 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ['hatchling']
+build-backend = 'hatchling.build'
 
 [project]
-name = "mini_toolbox"
-version = "0.0.2"
-authors = [{ name = "gnzhoutian", email = "gnzhoutian@qq.com" }]
-description = "Python迷你工具箱，包含简化的常用工具。"
-keywords = ["tools", "toolbox"]
-readme = "README.md"
-requires-python = ">=3.6"
+name = 'mini_toolbox'
+version = '0.0.6'
+authors = [{ name = 'gnzhoutian', email = 'gnzhoutian@qq.com' }]
+description = 'Python迷你工具箱，包含简化的常用工具，旨在帮助脚本快速开发。'
+keywords = ['tools', 'toolbox', 'mini-tools', 'mini-toolbox']
+readme = 'README.md'
+requires-python = '>=3.6'
 classifiers = [
-    "Development Status :: 4 - Beta",
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3.6",
-    "Programming Language :: Python :: 3 :: Only",
-    "Operating System :: OS Independent",
-    "Natural Language :: Chinese (Simplified)",
-    "Topic :: Documentation :: Sphinx",
-    "Topic :: Software Development :: Libraries :: Python Modules",
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3 :: Only',
+    'Operating System :: OS Independent',
+    'Natural Language :: Chinese (Simplified)',
+    'Topic :: Documentation :: Sphinx',
+    'Topic :: Software Development :: Libraries :: Python Modules',
 ]
 
 dependencies = [
     'pip >= 19.0.0',
     'setuptools >= 39.0.0',
+    'wheel',
     'toml',
     'colorlog',
     'pydes',
@@ -45,16 +46,15 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-docs = ['sphinx >= 7.0.0', 'sphinx-rtd-theme >= 1.0.0', 'myst-parser >= 1.0.0']
-
+docs = ['sphinx==4.5.0','sphinx-rtd-theme==1.1.1','myst-parser==0.16.1']
 
 [project.urls]
-Homepage = "https://github.com/gnzhoutian/mini_toolbox"
-Issues = "https://github.com/gnzhoutian/mini_toolbox/issues"
-Repository = "https://github.com/gnzhoutian/mini_toolbox.git"
-Changelog = "https://github.com/gnzhoutian/mini_toolbox/blob/haha/CHANGELOG.md"
-Documentation = "https://mini-toolbox.readthedocs.io/latest/"
+Homepage = 'https://pypi.org/project/mini-toolbox'
+Issues = 'https://github.com/gnzhoutian/mini_toolbox/issues'
+Repository = 'https://github.com/gnzhoutian/mini_toolbox.git'
+Changelog = 'https://mini-toolbox.readthedocs.io/zh/latest//CHANGELOG.html'
+Documentation = 'https://mini-toolbox.readthedocs.io/zh/latest/'
 
 [project.scripts]
-piplist = "mini_toolbox.pip_list:main"
-trans_encode = 'mini_toolbox.trans_encode:main'
+pip_list = 'mini_toolbox.pip_list:main'
+file_recoding = 'mini_toolbox.file_recoding:main'

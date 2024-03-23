@@ -1,5 +1,5 @@
-.. jjscm_tools documentation master file, created by
-   sphinx-quickstart on Wed Dec  7 09:19:29 2022.
+.. mini_toolbox documentation master file, created by
+   sphinx-quickstart on Sat Mar 23 22:19:29 2024.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -11,8 +11,10 @@
    :caption: 目录:
    
    mini_toolbox
-   CHANGELOG
+   mini_toolbox.alpha
+   mini_toolbox.useless
    README
+   CHANGELOG
    
 
 索引

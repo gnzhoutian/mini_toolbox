@@ -159,8 +159,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-
 # Private
-docs/source/mini_toolbox.*
 docs/source/modules.rst
-docs/source/README.md
+docs/source/mini_toolbox.*
+docs/source/*.md

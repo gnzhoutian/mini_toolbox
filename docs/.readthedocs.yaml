@@ -8,6 +8,7 @@ build:
     pre_build:
       - cp -af README.md CHANGELOG.md docs/source/
       - sphinx-apidoc -Mf -o docs/source mini_toolbox/
+      - sed -i '/^Subpackages$/,//{/^Submodules$/!d}' docs/source/mini_toolbox.rst
 
 python:
   install:

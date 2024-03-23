@@ -1,16 +1,22 @@
 {
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
-    // 头部注释
-    "fileheader.customMade": {
-        "Author": "gnzhoutian@qq.com",
-        "FilePath": "",
-        "Date": "Do not edit", // 文件创建时间(不变)
-        "Description": "", // 介绍文件的作用、文件的入参、出参。
-    },
     "files.exclude": {
-        "**/LICENSE": true,
-        // "**/.gitignore": true,
+        "LICENSE": true,
         "dist": true,
+        ".gitignore": true,
+        "docs/build": true,
+        "docs/source/modules.rst": true,
+        "docs/source/mini_toolbox.*": true,
+        "docs/source/*.md": true,
+        "docs/Makefile": true,
+        "docs/source/_static": true,
+        // "docs": true,
+        "tests": true,
+        "mini_toolbox/alpha": true,
+        "mini_toolbox/useless": true,
+        "pyproject.toml": true,
+        "build.sh": true,
+        "*.md": true,
     },
 }
