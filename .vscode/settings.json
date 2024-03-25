@@ -2,21 +2,22 @@
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
     "files.exclude": {
-        "LICENSE": true,
+        // useless
         "dist": true,
-        ".gitignore": true,
         "docs/build": true,
         "docs/source/modules.rst": true,
         "docs/source/mini_toolbox.*": true,
         "docs/source/*.md": true,
-        "docs/Makefile": true,
-        "docs/source/_static": true,
-        // "docs": true,
-        "tests": true,
+        // less edit
+        "LICENSE": true,
+        ".gitignore": true,
+        "build.sh": true,
+        "docs": true,
+        // temp hide
         "mini_toolbox/alpha": true,
         "mini_toolbox/useless": true,
-        "pyproject.toml": true,
-        "build.sh": true,
-        "*.md": true,
+        // "pyproject.toml": true,
+        // "tests": true,
+        // "*.md": true,
     },
 }

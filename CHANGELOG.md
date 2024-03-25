@@ -1,8 +1,6 @@
 # 更新日志
 
-
-## v1.1.0 - ing
-**Release date: 2024-04-xx**
+## v1.1.0 (2024-04-xx) (ing)
 ```shell
 # Deprecated
     - None
@@ -14,9 +12,7 @@
     - None
 ```
 
-
-## v1.0.0 - 推荐
-**Release date: 2024-03-24**
+## v1.0.0 (2024-03-31) (推荐)
 ```shell
 # Deprecated
     - None
@@ -28,10 +24,7 @@
     - None
 ```
 
-
-
-## v0.0.3
-**Release date: 2024-03-23**
+## v0.1.0 (2024-03-30)
 ```shell
 # Deprecated
     - None
@@ -39,12 +32,12 @@
     - None
 # Added
     - 完成文档结构调整
+    - 
 # Fixed
     - None
 ```
 
-## v0.0.0 - 模版
-**Release date: 2024-xx-xx**
+## v0.0.0 (2024-xx-xx) (模版)
 ```shell
 # Deprecated
     - 已经废弃, 不建议调用, 即将删除

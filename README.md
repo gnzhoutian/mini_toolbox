@@ -102,10 +102,7 @@ exec_cmd('find .', live=True)
 
 ``` shell
 # 将本地目录作为库安装调试
-pip3 install -e .
-
-# 安装文档编译依赖
-pip3 install -r docs/requirements.txt
+pip3 install -e .[docs]
 
 # 手动格式化代码
 ./build.sh format

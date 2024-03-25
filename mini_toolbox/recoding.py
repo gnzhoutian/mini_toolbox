@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/file_recoding.py
+# @File: mini_toolbox/recoding.py
 # @Date: 2024-03-19 15:01:53
 # @Desc: 用于转换文件编码
 """ 

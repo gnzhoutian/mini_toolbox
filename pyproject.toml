@@ -47,6 +47,7 @@ dependencies = [
 
 [project.optional-dependencies]
 docs = ['sphinx==4.5.0','sphinx-rtd-theme==1.1.1','myst-parser==0.16.1']
+test = ['pytest']
 
 [project.urls]
 Homepage = 'https://pypi.org/project/mini-toolbox'
@@ -57,4 +58,4 @@ Documentation = 'https://mini-toolbox.readthedocs.io/zh/latest/'
 
 [project.scripts]
 pip_list = 'mini_toolbox.pip_list:main'
-file_recoding = 'mini_toolbox.file_recoding:main'
+file_recoding = 'mini_toolbox.recoding:main'
