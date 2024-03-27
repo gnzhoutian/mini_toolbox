@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/crypt.py
-# @Date: 2024-03-23 21:10:29
-# @Desc: 用于字符串加解密, 支持DES/RSA
+# """ 用于字符串加解密, 支持DES/RSA """
 
 __all__ = ['CryptTools']
 
+import os
 import rsa
 from base64 import b64encode, b64decode
 from binascii import a2b_hex, b2a_hex
@@ -15,7 +14,7 @@ from typing import Optional
 
 
 class CryptTools():
-    """ 用于DES/RSA加解密
+    """ 用于字符串加解密, 支持DES/RSA
 
     Args: 
         key (Optional[str]): 自定义密钥, 用于DES认证
@@ -63,6 +62,7 @@ class CryptTools():
 
         pub_key, priv_key = rsa.newkeys(512)
 
+        os.makedirs(os.path.dirname(self.priv) or '.', exist_ok=True)
         with open(self.priv, 'wb') as fp:
             fp.write(priv_key.save_pkcs1())
 

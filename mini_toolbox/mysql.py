@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/mysql.py
-# @Date: 2024-03-23 22:20:01
-# @Desc: 用于操作mysql数据库
+# """ 用于操作mysql数据库 """
 
 __all__ = ['MySQL']
 
@@ -23,9 +21,10 @@ class MySQL():
         port (int): 服务器端口
         user (str): 用户名
         passwd (str): 用户密码
+        database (str): 数据库名
     """
 
-    def __init__(self, host: str, port: int = 3306, user: str = '', passwd: str = '', database: str = ''):
+    def __init__(self, host: str, port: int = 3306, user: str = '', passwd: str = '', database: str = '') -> None:
         self.connDB = pymysql.connect(host=host,
                                       port=port,
                                       user=user,
@@ -35,14 +34,6 @@ class MySQL():
                                       charset='utf8',
                                       connect_timeout=5)
         self.connDB.ping()
-
-    def __del__(self) -> None:
-        """ 实例销毁时自动退出mysql """
-
-        try:
-            self.connDB.close()
-        except:
-            pass
 
     def search_data(self, sql: str, data: Union[list, tuple, dict, None] = None) -> Any:
         """ 执行sql查询语句, 返回查询结果

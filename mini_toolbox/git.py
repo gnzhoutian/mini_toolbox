@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/git.py
-# @Date: 2024-03-23 22:28:43
-# @Desc: 用于gitlab相关操作
+""" 用于gitlab相关操作 """
 
 __all__ = ['GitTools']
 

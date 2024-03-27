@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/config.py
-# @Date: 2024-03-23 21:48:19
-# @Desc: 用于解析配置文件, 包含json, toml
 """ 用于解析配置文件, 包含json、toml, 由于用法很简单, 仅做部分封装 """
 
 __all__ = ['json_dumps', 'json_dump', 'json_loads', 'json_load', 'toml', 'json']
 
+import os
 import json
 import toml
 from typing import Any
-
-from .utils import mkdirs
 
 
 def json_dumps(data: Any) -> str:
@@ -23,7 +19,7 @@ def json_dumps(data: Any) -> str:
 def json_dump(data: Any, file: str, indent: int = 4, encoding: str = 'utf-8') -> None:
     """ 将数据对象写入json文件 """
 
-    mkdirs(file)
+    os.makedirs(os.path.dirname(file) or '.', exist_ok=True)
     with open(file, 'w', encoding=encoding) as fp:
         json.dump(data, fp, ensure_ascii=False, indent=indent)
 

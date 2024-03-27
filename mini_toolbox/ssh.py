@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/ssh.py
-# @Date: 2024-03-23 22:34:49
-# @Desc: 用于ssh/sftp相关操作
+""" 用于ssh/sftp相关操作 """
 
 __all__ = ['SshTools']
 

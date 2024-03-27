@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/mail.py
-# @Date: 2024-03-23 22:06:58
-# @Desc: 用于发送邮件通知
+""" 用于发送邮件通知 """
 
 __all__ = ['Mail']
 

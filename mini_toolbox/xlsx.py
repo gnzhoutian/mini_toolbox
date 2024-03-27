@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/xlsx.py
-# @Date: 2024-03-23 20:33:40
-# @Desc: 用于xlsx相关操作
-"""
+""" 用于xlsx相关操作
+
 Note:
     1. 由于操作excel时具有较强的特殊性, 此处不提供封装
     2. openpyxl库操作明确, 建议直接根据业务做特殊化处理

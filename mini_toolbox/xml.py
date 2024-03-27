@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/xml.py
-# @Date: 2024-03-23 20:41:36
-# @Desc: 用于XML相关操作
+# """ 用于XML相关操作 """
 
 __all__ = ['XmlTools']
 
@@ -15,6 +13,10 @@ from typing import List, Optional, Union
 
 class XmlTools():
     """ 用于XML相关操作
+
+    Args:
+        file (str): xml文件路径
+        pretty (bool): 是否格式化保存, 默认为原始格式
     
     Note:
         官方文档: `Element`_, `ElementTree`_, `xpath`_, `findall`_
@@ -59,11 +61,6 @@ class XmlTools():
             [tag]                    # 子节点存在指定标签
             [tag='text']             # 子节点存在指定标签文本对
 
-    Args:
-        file (str): xml文件路径
-        pretty (bool): 是否格式化输出, 默认为原始输出
-        
-    
     .. _Element:
         https://lxml.de/2.2/api/lxml.etree._Element-class.html
     
@@ -96,7 +93,7 @@ class XmlTools():
         Args:
             as_file (str): 另存为文件, 默认为更新原始文件
             encoding (str): 文件编码, 默认为utf-8
-            indent (str): 格式化输出时缩进, 默认为4个空白字符
+            indent (str): 格式化保存时缩进, 默认为4个空白字符
         """
 
         if self.pretty:
@@ -222,7 +219,7 @@ class XmlTools():
         self.setattr(node, attrib)
         return node
 
-    def makenote(self, text: str) -> CM:
-        """ 创建注释 """
+    def makenote(self, text: str, space: str = ' ') -> CM:
+        """ 创建注释, 默认文本前后添加一个空格 """
 
-        return etree.Comment(' {} '.format(text))
+        return etree.Comment('{}{}{}'.format(space, text, space))

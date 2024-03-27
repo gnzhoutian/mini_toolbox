@@ -4,7 +4,7 @@ build-backend = 'hatchling.build'
 
 [project]
 name = 'mini_toolbox'
-version = '0.0.8'
+version = '0.0.9'
 authors = [{ name = 'gnzhoutian', email = 'gnzhoutian@qq.com' }]
 description = 'Python迷你工具箱，包含简化的常用工具，旨在帮助脚本快速开发。'
 keywords = ['tools', 'toolbox', 'mini-tools', 'mini-toolbox']

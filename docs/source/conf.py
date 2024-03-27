@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.abspath("../.."))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 # The full version, including alpha/beta/rc tags.
-release = '0.0.8'
+release = '0.0.9'
 
 project = 'Python迷你工具箱'
 author = 'gnzhoutian'

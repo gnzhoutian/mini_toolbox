@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/svn.py
-# @Date: 2024-03-23 22:15:35
-# @Desc: 用于svn相关操作
 """ SVN常用指令封装
 
 Warning:

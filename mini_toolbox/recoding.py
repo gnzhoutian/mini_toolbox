@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/recoding.py
-# @Date: 2024-03-19 15:01:53
-# @Desc: 用于转换文件编码
 """ 
 Note:
-    提供命令行工具 ``file_recoding`` , 用于转换文件编码, 使用 ``-h`` 查看命令行帮助
+    提供命令行工具 ``file_recoding``, 用于转换文件编码, 使用 ``-h`` 查看命令行帮助
 """
 
 __all__ = ['file_recoding']

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/alpha/mini_server.py
-# @Date: 2024-03-23 18:57:25
-# @Desc: 简易http服务端
+""" 简易http服务端 """
 
 import json
 from http.server import HTTPServer, BaseHTTPRequestHandler

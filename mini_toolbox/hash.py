@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/hash.py
-# @Date: 2024-03-23 22:12:36
-# @Desc: 提供基本hash工具: md5/sha1/sha256
 """ 提供基本hash工具: md5/sha1/sha256 """
 
 __all__ = ['md5', 'sha1', 'sha256']
@@ -12,7 +9,7 @@ import hashlib
 from typing import Any, Optional
 
 
-def _hash(file_path: str, myhash: Any = hashlib.md5()) -> Any:
+def _hash(file_path: str, myhash: Any = hashlib.md5()) -> Optional[str]:
     """ 根据指定hash工具, 返回对应的hash值, 仅限内部调用"""
 
     if not os.path.isfile(file_path):
@@ -27,18 +24,18 @@ def _hash(file_path: str, myhash: Any = hashlib.md5()) -> Any:
 
 
 def md5(file_path: str) -> Optional[str]:
-    """ 用于计算文件的md5: 合法文件, 返回指定文件md5值; 非法文件, 返回None """
+    """ 计算文件的md5: 合法文件, 返回指定文件md5值; 非法文件, 返回 ``None`` """
 
     return _hash(file_path, hashlib.md5())
 
 
 def sha1(file_path: str) -> Optional[str]:
-    """ 用于计算文件的sha1: 合法文件, 返回指定文件sha1值; 非法文件, 返回None """
+    """ 计算文件的sha1: 合法文件, 返回指定文件sha1值; 非法文件, 返回 ``None`` """
 
     return _hash(file_path, hashlib.sha1())
 
 
 def sha256(file_path: str) -> Optional[str]:
-    """ 用于计算文件的sha256: 合法文件, 返回指定文件sha256值; 非法文件, 返回None """
+    """ 计算文件的sha256: 合法文件, 返回指定文件sha256值; 非法文件, 返回 ``None`` """
 
     return _hash(file_path, hashlib.sha256())

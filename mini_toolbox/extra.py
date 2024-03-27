@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/extra.py
-# @Date: 2024-03-23 22:10:49
-# @Desc: 扩展工具集
 """ 扩展工具集, 统一存放存在内部依赖的工具 """
 
 __all__ = ['catch_exception', 'update_obj', 'gen_deps_seq', 'make_patch', 'dict_sort', 'format_vars', 'edit_file']

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/ftp.py
-# @Date: 2024-03-23 22:21:16
-# @Desc: 用于FTP相关操作
+""" 用于FTP相关操作 """
 
 __all__ = ['FtpTools']
 

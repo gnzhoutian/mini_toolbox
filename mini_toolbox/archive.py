@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/archive.py
-# @Date: 2024-03-23 22:09:20
-# @Desc: 解压缩工具, 如zip/unzip/tar
 """ 解压缩工具, 如zip/unzip/tar """
 
 __all__ = ['zip', 'unzip', 'tar', 'untar']

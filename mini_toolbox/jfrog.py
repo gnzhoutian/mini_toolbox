@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/jfrog.py
-# @Date: 2024-03-23 22:33:10
-# @Desc: 用于操作JFrog仓库
+# """ 用于操作JFrog仓库 """
 
 __all__ = ['JFrog']
 

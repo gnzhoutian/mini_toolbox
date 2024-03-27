@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/jenkins.py
-# @Date: 2024-03-23 22:31:14
-# @Desc: 用于jenkins相关操作
+# """ 用于jenkins相关操作 """
 
 __all__ = ['JenkinsTools']
 

@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/pip_list.py
-# @Date: 2024-03-19 15:01:33
-# @Desc: 用于格式化显示pip库安装日期
 """ 
 Note:
-    提供命令行工具 ``pip_list`` , 用于格式化显示pip库安装日期, 使用 ``-h`` 查看命令行帮助
+    提供命令行工具 ``pip_list``, 用于格式化显示pip库安装日期, 使用 ``-h`` 查看命令行帮助
 """
 
 __all__ = ['gen_pip_list']
@@ -80,7 +77,7 @@ def main():
 
     # 格式化打印
     for item in data[:2] + pkgs_data:
-        print("%-*s %-*s %-*s" % (size[0], item[0], size[1], item[1], size[2], item[2]))
+        print("%-*s %-*s %-*s" % (size[0], item[0], size[1], item[1], size[2], item[2]), flush=True)
 
     sys.exit(0)
 

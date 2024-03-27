@@ -56,6 +56,10 @@ case "$1" in
         yapf -ir --style "{based_on_style: google, column_limit: 120}" .
         grep -rn '[，：；]' . | grep -vE '(html|grep|Binary|Python迷你工具箱|功能描述详见)'
         ;;
+    't'| 'test')
+        # 执行单元测试
+        pytest -v
+        ;;
     'p'|'publish'|'pypi')
         # 发布至pypi
         python3 -m twine upload --repository pypi dist/*

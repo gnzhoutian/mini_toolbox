@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/utils.py
-# @Date: 2024-03-19 10:42:12
-# @Desc: 实用系统工具
 """ 实用系统工具 """
 
 __all__ = [

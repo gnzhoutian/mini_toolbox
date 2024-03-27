@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-# @File: mini_toolbox/dingtalk.py
-# @Date: 2024-03-23 22:22:09
-# @Desc: 用于钉钉群消息通知
+""" 用于钉钉群消息通知 """
 
 __all__ = ['DingTalk']
 
